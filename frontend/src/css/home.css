@@ -28,6 +28,7 @@
     margin-left: 250px;
     margin-top: -50px;
     z-index: 1;
+    box-shadow: 7px 7px 9px #494a4b;
     
 }
 .icon
@@ -77,4 +78,11 @@
 {
     width: 600px;
     margin-left: 60px;
+    margin-top: 20px;
+}
+.footer-pic
+{
+    width: 500px;
+    margin-left: 100px;
+    margin-top: 50px;
 }

@@ -1,6 +1,8 @@
 .picture
 {
     width: 200px;
+    height: 260px;
+    size: cover;
     border-radius: 300px;
     margin-top: 50px;
     margin-left: 80px;
@@ -11,9 +13,9 @@
   transition: .5s ease;
   backface-visibility: hidden;
 }
-.picture:hover
-{
-    background-color: aliceblue;
+.container {
+    position: relative;
+   
 }
 .middle {
     transition: .5s ease;
@@ -26,8 +28,8 @@
     text-align: center;
   }
   
-  .container:hover .image {
-    opacity: 0.3;
+  .container:hover .picture {
+    opacity: 0.5;
   }
   
   .container:hover .middle {
@@ -35,8 +37,10 @@
   }
   
   .text {
-    background-color: #04AA6D;
-    color: white;
+    background-color: #f5f5f5;
+    color: black;
     font-size: 16px;
-    padding: 16px 32px;
+    padding: 10px;
+    margin-left: 50px;
+    border-radius: 30px;
   }
