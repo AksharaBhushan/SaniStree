@@ -1,0 +1,9 @@
+.itemCountNum{
+    border: 1px black solid;
+    font-weight: 600 !important;
+}
+
+.placeOrder{
+    width: 8vw;
+    font-weight: 600;
+}
