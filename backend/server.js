@@ -5,7 +5,7 @@ import colors from "colors";
 
 dotenv.config();
 
-connectDB();
+await connectDB();
 
 const app=express();
 
