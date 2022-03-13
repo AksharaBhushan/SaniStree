@@ -4,7 +4,13 @@ import colors from 'colors';
 import users from './data/users.js';
 import blogs from './data/blogs.js';
 import User from './models/userModel.js';
+import Blog from './models/blogModel.js';
 import connectDB from './config/db.js';
+import pads from './data/pads.js';
+import Pad from './models/padModel.js';
+import volunteers from './data/volunteers.js';
+import Vol from './models/volModel.js';
+
 
 dotenv.config();
 
@@ -12,19 +18,23 @@ await connectDB();
 
 const importData=async()=>{
     try {
-        await blogs.deleteMany();
+        await Blog.deleteMany();
         await User.deleteMany();
-
+        await Pad.deleteMany();
+        await Vol.deleteMany();
 
         const createdUser=await User.insertMany(users);
+        
 
         const adminUser=createdUser[0]._id;
 
-        const sampleBlogs=blogs.map(blogs=>{
-            return{...blogs,user:adminUser}
+        const sampleBlogs=blogs.map(blog=>{
+            return{...blog,user:adminUser}
         })
 
         await Blog.insertMany(sampleBlogs)
+        await Pad.insertMany(pads);
+        await Vol.insertMany(volunteers);
         console.log("Data imported".green.inverse)
         process.exit();
     } catch (error) {
@@ -37,7 +47,8 @@ const destroyData=async()=>{
     try {
         await Blog.deleteMany();
         await User.deleteMany();
-
+        await Pad.deleteMany();
+        await Vol.deleteMany();
         console.log("Data destroyed".red.inverse)
         process.exit();
     } catch (error) {
