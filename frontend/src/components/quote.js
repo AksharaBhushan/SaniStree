@@ -1,5 +1,5 @@
 import "../css/quote.css"
-import collage from "../collage.jpg"
+import collage from "../images/collage.jpg"
 
 const Quote = () => {
     return ( 

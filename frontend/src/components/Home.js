@@ -1,12 +1,12 @@
 import "../css/home.css"
 import { Col } from "react-bootstrap";
 import { Row } from "react-bootstrap"; 
-import volunteer from "../charity.png"
-import donate from "../donation.png"
-import buy from "../cart.png"
+import volunteer from "../images/charity.png"
+import donate from "../images/donation.png"
+import buy from "../images/cart.png"
 import { Button } from "react-bootstrap";
-import cover from "../cover.png"
-import coverrr from "../cover-2.png"
+import cover from "../images/cover.png"
+import coverrr from "../images/cover-2.png"
 
 
 

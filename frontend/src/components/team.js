@@ -1,10 +1,10 @@
 import { Col } from "react-bootstrap";
 import { Row } from "react-bootstrap";
 
-import akshara from "../akshara.jpeg"
-import japneet from "../japneet.jpeg"
-import aditya from "../aditya.jpg"
-import kanwar from "../kanwar.jpg"
+import akshara from "../images/akshara.jpeg"
+import japneet from "../images/japneet.jpeg"
+import aditya from "../images/aditya.jpg"
+import kanwar from "../images/kanwar.jpg"
 import "../css/team.css"
 
 const Team = () => {
