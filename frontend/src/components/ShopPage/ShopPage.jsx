@@ -5,7 +5,7 @@ import "./ShopPage.css";
 
 const ShopPage = () => {
 
-    console.log(ngoData)
+    // console.log(ngoData)
   return (
     <div>
 
